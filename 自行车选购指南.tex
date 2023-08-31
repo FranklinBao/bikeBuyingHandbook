@@ -7,27 +7,63 @@
 % Packages
 \usepackage{amsmath}
 \usepackage{ctex}
+\usepackage{lipsum}
 
 % Document
 \begin{document}
-\tableofcontents
-\section{前言}
-\chapter{明确你的目标}
-    \section{如何分配预算}
-    \section{什么样的自行车}
-\chapter{自行车分级和特征}
-\chapter{自行车的类型}
-    \section{城市和休闲旅行车}
-    \section{运动自行车}
-        \subsection{公路车}
-        \subsection{山地车}
-\chapter{自行车的技术和指标}
+    \tableofcontents
+    \chapter*{前言}
+    \addcontentsline{toc}{chapter}{前言}
+    \include{preface}
 
-\appendix
-\chapter{推荐车型列表及价格（参考）}
-    \section{城市和休闲旅行车}
-    \section{运动自行车}
-        \subsection{公路车}
-        \subsection{山地车}
+    \chapter{如何阅读本书}\label{ch:how2read}
+    \include{howtoread}
+
+    \chapter{明确你的目标}\label{ch:setGoal}
+    \include{setGoal}
+
+    \section{如何分配预算}\label{sec:budget}
+    \include{budget}
+
+    \section{什么样的自行车}\label{sec:whichBike}
+    \include{whichbike}
+
+    \chapter{自行车分级和特征}\label{ch:grade&feature}
+    \include{grade&feature}
+
+    \chapter{自行车的类型}\label{ch:types}
+    \include{types}
+
+    \section{城市和休闲旅行车}\label{sec:urban&travel}
+    \include{urban&travel}
+
+    \section{运动自行车}\label{sec:sports}
+    \include{sports}
+
+    \subsection{公路车}\label{subsec:road}
+    \include{road}
+
+    \subsection{山地车}\label{subsec:MTB}
+    \include{mtb}
+
+    \chapter{自行车的技术和指标}\label{ch:tech&index}
+    \include{tech&index}
+
+    \appendix
+
+    \chapter{推荐车型及价格（参考）列表}\label{ch:(ref)model&price}
+    \include{model&price}
+
+    \section{城市和休闲旅行车}\label{sec:(ref)urban&travelList}
+    \include{urban&travellist}
+
+    \section{运动自行车}\label{sec:(ref)sportsList}
+    \include{sportslist}
+
+    \subsection{公路车}\label{subsec:(ref)roadList}
+    \include{roadlist}
+
+    \subsection{山地车}\label{subsec:(ref)MTBList}
+    \include{mtblist}
 
 \end{document}
